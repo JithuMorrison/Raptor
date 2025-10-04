@@ -1,0 +1,106 @@
+// Variable declarations
+int x = 5;
+y := 3.14;
+float z;
+
+// Function definition
+fn add(a: int, b: int) {
+    x = a + b;
+    ret x;
+}
+
+// Object declaration
+obj ten = {
+    int x;
+    fn ad(a, b);
+    float y = 2.5;
+}
+
+// Member assignment
+ten.x = 10;
+ten.y = 3.14;
+
+// Class declaration with constructor
+class Point(x: int, y: int) {
+    int x;
+    int y;
+    
+    fn distance() {
+        x = x + y;
+        ret x;
+    }
+}
+
+// Class without constructor parameters
+class Circle {
+    float radius;
+    
+    fn area() {
+        radius = 3.14;
+        ret radius;
+    }
+}
+
+// Class instantiation
+Point p(2, 3);
+Circle c();
+
+// Control structures
+if x > 0 {
+    y = 2.5;
+}
+
+if x in 1..10 {
+    x = x + 1;
+} else {
+    x = 0;
+}
+
+// For loop
+for i in 1..10 {
+    x = x + 1;
+}
+
+for i in 1..100 where i > 50 {
+    x = i;
+}
+
+// While loop
+while x < 100 {
+    x = x + 1;
+}
+
+// Dictionary
+dict d = {1: 2, 3: 4};
+v := {"key": "value", "name": "test"};
+
+// List
+list nums = [1, 2, 3, 4, 5];
+empty := [];
+
+// Range expressions
+r := 1..10;
+r2 := 1..10_+2;
+r3 := 1..100_*5;
+r4 := 0..50_-1;
+
+// Ternary operator
+result := x > 10 ? 1 : 0;
+
+// Function calls
+add(5, 10);
+ten.ad(1, 2);
+
+// Return statements
+fn getValue() {
+    ret 42;
+}
+
+fn noReturn() {
+    x = 5;
+    ret;
+}
+
+// Complex expressions
+result = (x + y) * (z - 5) / 2;
+bool flag = x == 5 && y != 3.14 || z > 0;
