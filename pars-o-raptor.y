@@ -55,6 +55,7 @@ SimpleStmt:
     VarDecl
     | Assignment
     | FnCall
+    | MemberFnCall
     | MemberAssignment
     | ClassInstantiation
     | ReturnStmt
