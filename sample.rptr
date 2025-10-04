@@ -57,7 +57,7 @@ if x in 1..10 {
 }
 
 // For loop
-for i in 1..10 {
+for i in 1..10_+3 {
     x = x + 1;
 }
 
@@ -90,14 +90,16 @@ result := x > 10 ? 1 : 0;
 // Function calls
 add(5, 10);
 ten.ad(1, 2);
+c.area();
 
 // Return statements
 fn getValue() {
     ret 42;
 }
 
-fn noReturn() {
+fn noReturn(x:int) {
     x = 5;
+    noReturn(x);
     ret;
 }
 
